@@ -9,7 +9,7 @@ ggplot(data = songs,
   geom_histogram(fill = 'orange', color = 'purple')
 # Numerical summary of bpm
 summary(songs$bpm)
-f %>%
+songs %>%
   summarise(bpmavg = mean(bpm),
             bpmmed = median(bpm),
             bpmstd = sd(bpm),
